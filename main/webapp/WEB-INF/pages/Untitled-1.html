@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Product Added</title>
+    <style>
+        body {
+            background-color: #f0f9f4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .success-box {
+            background-color: #ffffff;
+            padding: 40px 50px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .success-box h2 {
+            color: #28a745;
+            margin-bottom: 20px;
+        }
+
+        .success-box p {
+            color: #555;
+            font-size: 16px;
+        }
+
+        .success-box a {
+            display: inline-block;
+            margin-top: 25px;
+            text-decoration: none;
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .success-box a:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="success-box">
+        <h2>✅ Product Added Successfully!</h2>
+        <p>Your product has been added to the catalog.</p>
+        <a href="${pageContext.request.contextPath}/adminproducts.jsp">Go Back to Dashboard</a>
+    </div>
+</body>
+</html>
